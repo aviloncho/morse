@@ -25,7 +25,6 @@ def countCaractersInFile(pFileName):
                 lCntPal += len(line.split(' '))
                 for i in range(0, len(line)):
                     if (line[i] == 'A') | (line[i] == 'E') | (line[i] == 'I') | (line[i] == 'O') | (line[i] == 'U'):
-                        print (line[i])
                         lCntVoc += 1
                     elif (line[i] == '0') | (line[i] == '1') | (line[i] == '2') | (line[i] == '3') | (line[i] == '4') | (line[i] == '5') | (line[i] == '6') | (line[i] == '7') | (line[i] == '8') | (line[i] == '9'):
                         lCntDig += 1
