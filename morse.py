@@ -3,7 +3,7 @@
 
 def fileMayus(pFileName):
     #Read each line of pFile parameter to save in mayus to mayus file
-    with open('fuente.txt', 'w') as mayus:
+    with open('./src/fuente.txt', 'w') as mayus:
         with open(pFileName, 'r') as lFile:
             line = lFile.readline()
             while line != '':
@@ -18,7 +18,7 @@ def countCaractersInFile(pFileName):
     lCntDig = 0
 
     with open(pFileName, 'r') as lFile:
-        with open('totales.txt', 'w') as TotFile:
+        with open('./src/totales.txt', 'w') as TotFile:
             line = lFile.readline()
             while line != '':
                 TotFile.write(line)
@@ -36,5 +36,5 @@ def countCaractersInFile(pFileName):
             TotFile.write('\nCANTIDAD DE CONSONANTES: '+str(lCntCon))
             TotFile.write('\nCANTIDAD DE DIGITOS NUMERICOS: '+str(lCntDig))
 
-fileMayus('original.txt')
-countCaractersInFile('fuente.txt')
+fileMayus('./src/original.txt')
+countCaractersInFile('./src/fuente.txt')
